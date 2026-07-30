@@ -32,7 +32,18 @@ Initial architecture and engineering foundation. APIs are unstable.
 - Tracing, replay, metrics, and cost controls
 - Benchmark and regression suites
 
-See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`NOTICE.md`](NOTICE.md).
+## Development workflow
+
+Changes are developed on focused branches and published through pull requests. Branch names use a short category prefix such as `feat/`, `fix/`, `docs/`, `test/`, `refactor/`, or `chore/`.
+
+Every pull request must describe its scope, validation performed, security impact, and provenance impact. Changes that reuse or adapt third-party material must update [`NOTICE.md`](NOTICE.md) before merge. See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) for the complete workflow.
+
+## Documentation
+
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+- [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md)
+- [`NOTICE.md`](NOTICE.md)
+- [`SECURITY.md`](SECURITY.md)
 
 ## Security
 
