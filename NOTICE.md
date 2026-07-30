@@ -2,7 +2,11 @@
 
 My Hermes is an independent project. It is not endorsed by, affiliated with, or maintained by Nous Research, Anthropic, OpenAI, Microsoft, LangChain, All Hands AI, SWE-agent, Mem0, the Model Context Protocol project, or the maintainers of ECC.
 
-This repository is designed from original code and architectural study. When source code is later incorporated or adapted, the relevant copyright notice, license text, source path, version or commit, and modification note must be recorded here before merge.
+This repository is designed from original code and architectural study. When source code is incorporated or adapted, the relevant copyright notice, license text, source path, version or commit, and modification note must be recorded here before merge.
+
+## Current provenance status
+
+The current implementation and documentation are original project work. The projects below are architectural and comparative references only. No source code, prompts, tests, schemas, configuration, documentation text, or assets from those projects are intentionally bundled or adapted in this repository unless a later entry explicitly records that reuse.
 
 ## Primary references
 
@@ -35,15 +39,32 @@ This repository is designed from original code and architectural study. When sou
 
 These community repositories are references only. No code from them is included unless a later entry explicitly records the copied or adapted material and its license.
 
-## Contribution rule
+## Required reuse record
 
-Every pull request that copies, translates, ports, adapts, or substantially derives code, configuration, prompts, documentation, tests, schemas, or assets from another project must update this file and include:
+Every pull request that copies, translates, ports, adapts, or substantially derives code, configuration, prompts, documentation, tests, schemas, or assets from another project must add an entry containing:
 
 1. Upstream repository and exact file path.
 2. Commit SHA or release tag.
 3. Upstream copyright holder.
-4. Applicable license.
-5. Description of local modifications.
-6. Location of the retained license text.
+4. Applicable license and link or retained local license path.
+5. Description of copied or adapted material.
+6. Description of local modifications.
+7. Files in this repository containing the derived material.
+8. Reviewer confirmation that attribution and redistribution requirements were checked.
 
-Dependencies installed normally through a package manager should be recorded in lockfiles and dependency manifests. Bundled, vendored, or modified dependencies require explicit notice here.
+Suggested entry format:
+
+```text
+### YYYY-MM-DD — component name
+- Upstream: owner/repository
+- Upstream path: path/to/file
+- Revision: commit-or-tag
+- Copyright: holder
+- License: SPDX identifier or exact license name
+- Local files: path/to/local/file
+- Modifications: summary
+- Retained notice/license: path or explanation
+- Reviewed by: GitHub handle or pull request
+```
+
+Dependencies installed normally through a package manager should be recorded in lockfiles and dependency manifests. Bundled, vendored, patched, or modified dependencies require an explicit notice entry.
