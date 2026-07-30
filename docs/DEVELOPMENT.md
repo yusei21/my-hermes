@@ -20,7 +20,7 @@ Examples:
 ```text
 feat/tool-registry
 fix/terminal-timeout
- docs/reference-governance
+docs/reference-governance
 ```
 
 ## Required pull request content
